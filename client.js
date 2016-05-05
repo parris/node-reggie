@@ -9,8 +9,8 @@ var fs = require('fs')
   ;
 
 var argv = optimist
-    .usage('reggie publish             --> Publish current module (from module root)\n' +
-           'reggie info <package_name> --> Show JSON info about a particular package')
+    .usage('reggie-cli publish             --> Publish current module (from module root)\n' +
+           'reggie-cli info <package_name> --> Show JSON info about a particular package')
     .default({ u: 'http://127.0.0.1:8080'})
     .describe('u', 'The base URL of the Reggie server (e.g. http://reggie:8080)')
     .alias('u', 'url')
@@ -60,14 +60,14 @@ else if (argv.command === 'info' && argv.param1) {
     uri: url,
     json: true
   }, handleDataResponse)
-}  
+}
 else if (argv.command === 'index') {
   var url = argv.url + '/index';
   request({
     uri: url,
     json: true
   }, handleDataResponse)
-}  
+}
 else {
   optimist.showHelp();
 }

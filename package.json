@@ -1,14 +1,18 @@
 {
-  "author": "Mike Brevoort <mike@brevoort.com>",
+  "contributors": [
+    "Parris Khachi (http://twitter.com/parrissays)"
+    "Mike Brevoort <mike@brevoort.com>"
+  ],
   "name": "reggie-cli",
-  "description": "An experimental light weight alternative to a full blown npm registry",
-  "version": "0.2.1",
+  "description": "CLI only version of node-reggie",
+  "license": "MIT",
+  "version": "0.2.2",
   "bin": {
     "reggie-cli": "./client.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mbrevoort/node-reggie.git"
+    "url": "git://github.com/parris/node-reggie.git"
   },
   "dependencies": {
     "async": "~0.1.22",

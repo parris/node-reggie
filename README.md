@@ -2,7 +2,7 @@
 
 ## Overview
 
-Reggie CLI is a stripped down version of node-reggie by github user mbrevoort. Reggie is great,
+Reggie CLI is a stripped down version of the node-reggie package by github user mbrevoort. Reggie is great,
 but it is no longer working on new versions of node. We have old versions of the reggie server
 running on some box, but we want to upgrade node on our dev environments and not get dtrace install
 errors on the reggie CLI. This package simply aims to fix that aspect by splitting out the
@@ -19,7 +19,7 @@ $ reggie-cli -u http://127.0.0.1:8080 publish
 
 The Reggie client just `npm packs` your module and `PUT`s it to `http://<host:post>/package/:name/:version`.
 
-## Readmore
+## Read More
 
 https://github.com/mbrevoort/node-reggie
 
